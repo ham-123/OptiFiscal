@@ -2,8 +2,11 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\OptifiscalController;
 
-Route::get('/', function () {
+
+
+Route::get('/accueil', function () {
     return view('welcome');
 });
 
@@ -16,5 +19,9 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::get('/', [OptifiscalController::class, 'index'])->name('accueil');
+Route::get('/a_propos', [OptifiscalController::class, 'about'])->name('about');
+
 
 require __DIR__.'/auth.php';
