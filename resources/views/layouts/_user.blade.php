@@ -91,7 +91,7 @@
 									<div class="collapse navbar-collapse" id="navbarSupportedContent">
 										<ul class="navbar-nav list-style-none">
 											<li class="nav-item">
-												<a class="nav-link" href="index.html">Accueil</a>	
+												<a class="nav-link" href="{{Route('accueil')}}">Accueil</a>	
 											</li>
 
 											<li class="nav-item">
@@ -99,11 +99,11 @@
 											</li>
 
 											<li class="nav-item">
-												<a class="nav-link" href="services.html">Services</a>
+												<a class="nav-link" href="{{Route('services')}}">Services</a>
                                             </li>
 											
 											<li class="nav-item">
-												<a class="nav-link" href="contact.html">Contact</a>
+												<a class="nav-link" href="{{Route('contact')}}">Contact</a>
 											</li>
 										</ul>
 									</div>
@@ -220,7 +220,7 @@
 				<div class="row align-items-center">
 					<div class="col-lg-12">
 						<div class="copyright mb-30 text-center">
-							<h6>Droit d'auteur & Conception par <a href="index.html">@HMD</a> - 2024</h6>
+							<h6>Droit d'auteur & Conception par <a href="{{Route('accueil')}}">@HMD</a> - 2024</h6>
 						</div>
 					</div>
 				</div>

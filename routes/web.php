@@ -22,6 +22,10 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/', [OptifiscalController::class, 'index'])->name('accueil');
 Route::get('/a_propos', [OptifiscalController::class, 'about'])->name('about');
+Route::get('/services', [OptifiscalController::class, 'services'])->name('services');
+
+Route::get('/contact', [OptifiscalController::class, 'contact'])->name('contact');
+Route::post('/contact', [OptifiscalController::class, 'store'])->name('contact.store');
 
 
 require __DIR__.'/auth.php';
