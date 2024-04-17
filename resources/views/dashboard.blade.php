@@ -1,17 +1,41 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+@extends('layouts._admin')
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("You're logged in!") }}
+@section('content')
+<br><br>
+    <div class="container">
+        <h1>Tableau de bord</h1>
+        
+        <!-- Résumé des activités -->
+        <div class="activity-summary">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Contacts</h5>
+                            <p class="card-text">Nombre total de contacts reçus : {{ $totalContacts }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Nouveaux Contacts (Cette semaine)</h5>
+                            <p class="card-text">Nombre de nouveaux contacts cette semaine : {{ $newContactsThisWeek }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Nouveaux Contacts (Ce mois)</h5>
+                            <p class="card-text">Nombre de nouveaux contacts ce mois-ci : {{ $newContactsThisMonth }}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        
+
     </div>
-</x-app-layout>
+@endsection

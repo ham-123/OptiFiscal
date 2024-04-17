@@ -41,7 +41,7 @@
 							<span><i class="fal fa-envelope"></i> info@webmail.com</span>
 							<span><i class="fal fa-phone"></i> +229 90 78 88 77</span>
 						</div>
-					</div>
+					</div> 
 					
 				</div>
 			</div>
@@ -220,7 +220,7 @@
 				<div class="row align-items-center">
 					<div class="col-lg-12">
 						<div class="copyright mb-30 text-center">
-							<h6>Droit d'auteur & Conception par <a href="{{Route('accueil')}}">@HMD</a> - 2024</h6>
+							<h6>Droit d'auteur & Conception par <a href="https://www.linkedin.com/in/hamid-tchemoko-a-509075227/">@HMD</a> - 2024</h6>
 						</div>
 					</div>
 				</div>
