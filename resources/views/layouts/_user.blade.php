@@ -110,15 +110,63 @@
 								</div>
 							</nav>
 						</div>
-						
+						<div class="col-lg-2 col-6">
+							<ul class="right-nav mb-0 d-flex align-items-center justify-content-end">
+								<li>
+									<div class="hamburger-menu">
+										<a href="javascript:void(0);">
+											<img src="assets/img/icon/eclips.png" alt="Eclips">
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>	
+
 					</div>
 				</div>
 			</div>
-			<!-- /.theme-main-menu -->
 		</div>
 	</header>
-	<!-- header-area end -->
-
+	
+	<aside class="slide-bar">
+		<div class="close-mobile-menu">
+			<a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+		</div>
+		<div class="offset-sidebar">
+			<div class="offset-widget offset-logo mb-30">
+				<a href="index.html">
+					<img src="assets/img/logo/logo-1.png" alt="logo">
+				</a>
+			</div>
+			<div class="offset-widget mb-40">
+				<div class="info-widget">
+					<h4 class="offset-title mb-20">À propos de la société</h4>
+					<p class="mb-30">
+						Nous sommes un cabinet comptable dévoué à fournir des services de qualité à nos clients. Notre objectif est d'assister nos clients dans la gestion de leurs finances et de leur offrir des conseils fiscaux judicieux.
+					</p>
+					<a class="theme_btn theme_btn_bg" href="{{Route('contact')}}">Nous contacter</a>
+				</div>
+			</div>
+			<div class="offset-widget mb-30 pr-10">
+				<div class="info-widget info-widget2">
+					<h4 class="offset-title mb-20">Coordonnées</h4>
+					<p> <i class="fal fa-address-book"></i>1010 Avenue de la Lune
+						Cotonou, Bénin.</p>
+					<p> <i class="fal fa-phone"></i> +229 90 78 88 77 </p>
+					<p> <i class="fal fa-envelope-open"></i> info@webmail.com </p>
+				</div>
+			</div>
+		</div>
+		<nav class="side-mobile-menu">
+			<ul id="mobile-menu-active">
+				<li><a href="{{Route('accueil')}}">Accueil</a></li>
+				<li><a href="{{Route('about')}}">À propos</a></li>
+				<li><a href="{{Route('services')}}">Services</a></li>
+				<li><a href="{{Route('contact')}}">Contact</a></li>
+			</ul>
+		</nav>
+	</aside>
+	<div class="body-overlay"></div>
 
 
 
